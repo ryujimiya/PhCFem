@@ -11,9 +11,10 @@ version1.0.0.0
 
 **How to install**  
 　Download "PhCFemx.x.x.x.zip" (where "x.x.x.x" is version) and unzip it.  
-　Execute "setup.exe", and follow the instruction of the installer.  
+　Execute "setup.exe", and follow the instructions of the installer.  
 
 **Source dependencies**  
 　CLW.dll You can get the modified version at the repository [HPlaneWGSimulator/Lisys](https://github.com/ryujimiya/HPlaneWGSimulator/tree/master/src/Lisys)  
+　　CLW.dll is originally created by KrdLab. [Lisys](https://github.com/krdlab/lisys)  
 　DelFEM4Net.dll You can get it from [DelFEM4Net](https://code.google.com/p/delfem4net/)  
-
+　　DelFEM4Net is the wrapper of "DelFEM" created by Nobuyuki Umetani. [DelFEM](https://code.google.com/p/delfem/)  
