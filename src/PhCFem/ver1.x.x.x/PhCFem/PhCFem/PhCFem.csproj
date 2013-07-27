@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E325827-19E9-4449-9038-C9DC623728A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhCFem</RootNamespace>
+    <AssemblyName>PhCFem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>..\..\publish_PhCFem\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>68C32838842970B36AEB6181D85E779A585C927D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PhCFem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>PhCFem.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CLW, Version=0.6.4.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lisys\Lisys-0.6.4-src\Release\CLW.dll</HintPath>
+    </Reference>
+    <Reference Include="DelFEM4Net, Version=1.0.0.8, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\C++\DelFEM4Net\DelFEM4Net\Release\DelFEM4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.OpenGl, Version=0.0.0.0, Culture=neutral, PublicKeyToken=1ca010269a4501ef">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\download\VC#\Tao-1.2.0-1\bin\Tao.OpenGl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.OpenGl.ExtensionLoader, Version=1.5.0.3, Culture=neutral, PublicKeyToken=aaade445f4a3f192">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\download\VC#\Tao-1.2.0-1\bin\Tao.OpenGl.ExtensionLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.OpenGl.Glu, Version=1.5.0.3, Culture=neutral, PublicKeyToken=3661ea75021374b5">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\download\VC#\Tao-1.2.0-1\bin\Tao.OpenGl.Glu.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Platform.Windows, Version=1.0.0.3, Culture=neutral, PublicKeyToken=701104b2da67a104">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\download\VC#\Tao-1.2.0-1\bin\Tao.Platform.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadDatFile.cs" />
+    <Compile Include="CadLogic.cs" />
+    <Compile Include="CadLogicBase.cs" />
+    <Compile Include="CalcSettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcSettingFrm.Designer.cs">
+      <DependentUpon>CalcSettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorMap.cs" />
+    <Compile Include="CommandManager.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="EigenFValueFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EigenFValueFrm.Designer.cs">
+      <DependentUpon>EigenFValueFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FemOutputPeriodicDatFile.cs" />
+    <Compile Include="SettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingFrm.Designer.cs">
+      <DependentUpon>SettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WgMesh.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="FemElement.cs" />
+    <Compile Include="FemLineElement.cs" />
+    <Compile Include="FemMat_Line_First.cs" />
+    <Compile Include="FemMat_Line_Second.cs" />
+    <Compile Include="FemMat_Tri_First.cs" />
+    <Compile Include="FemMat_Tri_Second.cs" />
+    <Compile Include="FemInputDatFile.cs" />
+    <Compile Include="FemMeshLogic.cs" />
+    <Compile Include="FemNode.cs" />
+    <Compile Include="FemOutputDatFile.cs" />
+    <Compile Include="FemPostProLogic.cs" />
+    <Compile Include="FemSolverPort.cs" />
+    <Compile Include="FemSolverPortPeriodic.cs" />
+    <Compile Include="FemTriElement.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageCombobox.Designer.cs">
+      <DependentUpon>ImageCombobox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeshViewFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeshViewFrm.Designer.cs">
+      <DependentUpon>MeshViewFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComplexMatrix.cs" />
+    <Compile Include="MyDoubleMatrix.cs" />
+    <Compile Include="MyMatrixUtil.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="KerEMatTri.cs" />
+    <Compile Include="MediaInfo.cs" />
+    <Compile Include="Memento.cs" />
+    <Compile Include="MementoCommand.cs" />
+    <Compile Include="MyUtil.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FemSolver.cs" />
+    <Compile Include="MyComplexBandMatrix.cs" />
+    <Compile Include="MyDoubleSymmetricBandMatrix.cs" />
+    <Compile Include="WgCadUtil.cs" />
+    <Compile Include="WgUtil.cs" />
+    <EmbeddedResource Include="CalcSettingFrm.resx">
+      <DependentUpon>CalcSettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EigenFValueFrm.resx">
+      <DependentUpon>EigenFValueFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingFrm.resx">
+      <DependentUpon>SettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeshViewFrm.resx">
+      <DependentUpon>MeshViewFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新規.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開く.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上書き保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PhCFem.ico" />
+    <Content Include="ReleaseNotes.txt" />
+    <None Include="Resources\消しゴム長方形25x25.png" />
+    <None Include="Resources\セル欠陥25x25.png" />
+    <None Include="Resources\セルロッド25x25.png" />
+    <None Include="Resources\自動計算.png" />
+    <None Include="Resources\領域移動25x25.png" />
+    <None Include="Resources\消しゴムフリーハンド25x25.png" />
+    <None Include="Resources\消しゴム25x25.png" />
+    <None Include="Resources\入射ポート番号振り25x25.png" />
+    <None Include="Resources\入射ポート選択25x25.png" />
+    <None Include="Resources\境界選択25x25.png" />
+    <None Include="Resources\モードクリア25x25.png" />
+    <None Include="Resources\エリア選択25x25.png" />
+    <None Include="Resources\やり直し.png" />
+    <None Include="Resources\元に戻す.png" />
+    <None Include="Resources\名前を付けて保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
